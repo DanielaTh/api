@@ -1,9 +1,10 @@
 package repositories
 
 import (
-	"crudPackages/models"
 	"database/sql"
 	"errors"
+
+	"github.com/DanielaTh/api/models"
 
 	// driver implementation
 	_ "github.com/go-sql-driver/mysql"

@@ -1,11 +1,12 @@
 package api
 
 import (
-	"crudPackages/models"
-	"crudPackages/repositories"
 	"encoding/json"
 	"net/http"
 	"strconv"
+
+	"github.com/DanielaTh/api/models"
+	"github.com/DanielaTh/api/repositories"
 
 	"github.com/gorilla/mux"
 )
@@ -13,6 +14,11 @@ import (
 // Handler : configuration
 type Handler struct {
 	SubjectDB repositories.SubjectStore
+}
+
+// Foo : test
+func Foo() string {
+	return "hola mundo"
 }
 
 // NewHandler : Init new Handler

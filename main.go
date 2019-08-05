@@ -1,11 +1,12 @@
 package main
 
 import (
-	"crudPackages/api"
 	"log"
 	"net/http"
 	"os"
 	"strconv"
+
+	"github.com/DanielaTh/api/api"
 
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
@@ -22,7 +23,9 @@ func init() {
 }
 
 func main() {
-	r := mux.NewRouter()
+	r := mux.NewRouter()	
+	s:= api.Foo()
+	log.Println(s + "from foo()")
 	h, err := api.NewHandler(viper.GetString("db"))
 	if err != nil {
 		log.Fatalln(err)

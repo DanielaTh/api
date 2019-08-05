@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"crudPackages/models"
+	"github.com/DanielaTh/api/models"
 )
 
 // SubjectStore : data access subject interface
